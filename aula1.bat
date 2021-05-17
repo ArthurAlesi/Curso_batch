@@ -2,7 +2,8 @@
 echo Ola Mundo
 echo Hello World
 
-
+title Aula 1 %time:~0,6%   %time:~6,5%
+echo %time%
 set nome=valor
 set curso= Batch Script
 :: é a forma como se define variável em batch
@@ -33,11 +34,13 @@ set /p usuario= ----  Diga o usuario: --------
 echo %usuario:a=x%
 
 :: --------------------------------------
-set horaAtual = %time%
-set horaAtual2 = %time:-0,5%
-echo horaAtual
+set horaAtual=%time%
+set horaAtual2=%time:~0,5%
+echo %horaAtual%
 echo a hora atual 2 eh %horaAtual2%
-echo 
+echo ------
+echo.
+:: echo.  pula uma linha
 
 
 
