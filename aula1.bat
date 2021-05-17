@@ -32,8 +32,12 @@ echo %conca%
 set /p usuario= ----  Diga o usuario: -------- 
 echo %usuario:a=x%
 
-
-
+:: --------------------------------------
+set horaAtual = %time%
+set horaAtual2 = %time:-0,5%
+echo horaAtual
+echo a hora atual 2 eh %horaAtual2%
+echo 
 
 
 
