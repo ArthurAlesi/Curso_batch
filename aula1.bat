@@ -29,7 +29,7 @@ set conca=%nome% %tipo%
 echo %nome% DE  %tipo%
 echo %conca%
 :: --------------------------------------
-
+cls
 set /p usuario= ----  Diga o usuario: -------- 
 echo %usuario:a=x%
 
