@@ -1,4 +1,7 @@
 @echo off
+echo Ola Mundo
+echo Hello World
+
 
 set nome=valor
 set curso= Batch Script
@@ -6,6 +9,33 @@ set curso= Batch Script
 
 echo %curso%
 :: O comando echo é semelhante ao print de python
-:: serve para imprimir coisa na console
-:: no entanto devemos 
+:: serve para imprimir mensagem na console
+:: no entanto devemos declarar as variaveis entre % quando for escrever
+:: --------------------------------------
+
+set /p curso=Digite algo: 
+:: semelhante ao input do python. Pega valor de entrada no console e armazena na variavel.
+
+:: AS VARIAVEIS POSSUEM ESCOPODE PROMPT
+:: para ter escopo em outros prompts deve-se definir uma variavel de ambiente
+
+echo %curso%
+:: --------------------------------------
+:: concatenacao de string
+set nome= Batch Script
+set tipo=Curso em video aulas
+set conca=%nome% %tipo%
+echo %nome% DE  %tipo%
+echo %conca%
+:: --------------------------------------
+
+set /p usuario= ----  Diga o usuario: -------- 
+echo %usuario:a=x%
+
+
+
+
+
+
+
 pause > nul
