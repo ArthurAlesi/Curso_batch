@@ -11,6 +11,37 @@ set variavel3=%variavel1% + %variavel2%
 echo %variavel3%
 :: perceba que ao contrário de outras, "linguagens houve uma concatenação das duas variaveis com o caracter '+' ao inves somar 2 + 3 = 5 ou 
 :: concatenar 2 + 3 = 23
-: --------------------------------------------------------
+:: -------------------------------------------------------
+
+echo. 
+echo.
+
+:: devemos usalar /a para criar uma variável numérica
+set /a adicao=2+2
+set /a subtracao=2-2
+set /a multiplicacao=2*2
+set /a divisao=2/2
+set /a modulo=2%2
+
+echo 2 + 2 = %adicao%
+echo 2 - 2 = %subtracao%
+echo 2 * 2 = %multiplicacao%
+echo 2 / 2 = %divisao%
+echo 2 %% 2 = %modulo%
+:: o parenteses é um operador de 'agrupamento'
+:: obs: o '%' é um caracter especial do bat. devemos usar dois se quisermos uma string dele
+:: -------------------------------------------------------
+set a/ a=1, b=2, c=3 , d=4, e=5
+set a+=a 
+set b*=b
+set c-=c
+set d/=d
+set e%=e
+echo %a% , %b% , %c% , %d% ,%e%
+
+
+
+
+
 
 pause > nul
