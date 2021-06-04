@@ -31,6 +31,13 @@ echo 2 %% 2 = %modulo%
 :: o parenteses é um operador de 'agrupamento'
 :: obs: o '%' é um caracter especial do bat. devemos usar dois se quisermos uma string dele
 :: -------------------------------------------------------
+:: () operador agrupamento
+:: * / % + -  operador aritmetico
+:: << >>  alternancias lógicas
+:: += /= %= += -= operador de expressão
+:: , sueprador de expressões
+
+:: --------------------------------------------------------
 set /a a=1 , b=2, c=3 , d=4, e=5
 
 set /a a+=a 
