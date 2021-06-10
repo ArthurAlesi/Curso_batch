@@ -47,10 +47,28 @@ set /a d/=d
 set /a e%%=e
 echo %a% , %b% , %c% , %d% , %e%
 ::---------------------------------------------
+echo.
+set /a x=3
+set /a x+=x  
+echo x = %x%
+:: ----------------------------------------------
 
+@echo off
+mode con:lines=5 cols=40
+color 06
+echo huhdsuhdsa
+title aula 04.2 calculadora
 
+set /p "op=Digite o operador"
+set /p "valor1=digite o primeiro valor"
+set /p "valor2=digite o  segundo valor"
 
+set /a result=%valor1% %op% %valor2%
 
+cls
 
+echo. & echo.
+::echo off
+echo %valor1% 
 
 pause > nul
