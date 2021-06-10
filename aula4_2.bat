@@ -69,6 +69,6 @@ cls
 
 echo. & echo.
 ::echo off
-echo %valor1% 
+echo %valor1% %op% %valor2% = %result%
 
 pause > nul
